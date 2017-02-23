@@ -1,0 +1,4 @@
+1.As purchaser, I want select all HP brand gaming notebooks on less than USD 30,000 so that the add to cart.
+2.As purchaser, I want to find the phone of the brand LG so that select them according to my specifications.
+3.As purchaser, I want to register so that to become a client of this site.
+4.As user, I want to get leave a comment on the item so that site users can see him.
