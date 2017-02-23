@@ -1,4 +1,4 @@
-package notebooksHP;
+package pageObject.notebooksHP;
 
 import driverHolder.DriverHolder;
 import org.openqa.selenium.WebDriver;

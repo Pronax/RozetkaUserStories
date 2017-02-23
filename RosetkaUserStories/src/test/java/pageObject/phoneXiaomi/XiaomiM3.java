@@ -1,7 +1,6 @@
-package phoneXiaomi;
+package pageObject.phoneXiaomi;
 
 import driverHolder.DriverHolder;
-import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
@@ -25,8 +24,6 @@ public class XiaomiM3 extends DriverHolder {
         return priceInCart ;
     }
 
-    public void assertPrice(){
-        Assert.assertTrue(goCart().contains(getPrice()));
-    }
+
 }
 

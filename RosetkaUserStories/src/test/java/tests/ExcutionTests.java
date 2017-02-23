@@ -1,23 +1,35 @@
 package tests;
 
-import homePageRozetka.HomePageRozetka;
-import notebooksHP.GameNotebook;
+
+import pageObject.homePageRozetka.HomePageRozetka;
+import pageObject.notebooksHP.GameNotebook;
 import org.junit.After;
+import org.junit.Assert;
+import org.junit.Before;
 import org.junit.Test;
 import org.openqa.selenium.WebDriver;
-import phoneXiaomi.AllPhones;
-import phoneXiaomi.XiaomiM3;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import pageObject.phoneXiaomi.XiaomiM3;
+
+import java.util.concurrent.TimeUnit;
 
 /**
  * Created by Stanislav on 22.02.2017.
  */
 public class ExcutionTests{
 
-    public WebDriver driver;
+    private WebDriver driver;
+
+    @Before
+    public void webDriver() {
+        System.setProperty("webdriver.gecko.driver", "C://Users/Stanislav/Desktop/практика Регулярка/geckodriver-v0.11.1-win64/geckodriver.exe");
+        driver = new FirefoxDriver();
+        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+    }
 
     @Test
-
     public void notebooksHP(){
+
         HomePageRozetka homePageRozetka = new HomePageRozetka(driver);
         GameNotebook gameNotebook = homePageRozetka
                 .goMainPage()
@@ -27,7 +39,9 @@ public class ExcutionTests{
         gameNotebook.selectPriceBorder();
 
 
+
     }
+
     @Test
     public void phoneXiaomi(){
         HomePageRozetka homePageRozetka = new HomePageRozetka(driver);
@@ -37,8 +51,7 @@ public class ExcutionTests{
                 .goBrandOfPhones()
                 .goAllPhones()
                 .selectXiaomiM3();
-        xiaomiM3.getPrice();
-        xiaomiM3.goCart();
+        Assert.assertTrue(xiaomiM3.goCart().equals(xiaomiM3.getPrice()));
 
 
 

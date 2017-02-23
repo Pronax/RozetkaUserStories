@@ -1,4 +1,4 @@
-package phoneXiaomi;
+package pageObject.phoneXiaomi;
 
 import driverHolder.DriverHolder;
 import org.openqa.selenium.WebDriver;

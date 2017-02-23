@@ -1,12 +1,13 @@
-package homePageRozetka;
+package pageObject.homePageRozetka;
 
 import driverHolder.DriverHolder;
-import notebooksHP.NotebookAndComputers;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
-import phoneXiaomi.GoPhonesAndElectronics;
+import pageObject.notebooksHP.NotebookAndComputers;
+import pageObject.phoneXiaomi.GoPhonesAndElectronics;
 
 /**
  * Created by Stanislav on 22.02.2017.
@@ -15,6 +16,7 @@ public class HomePageRozetka extends DriverHolder {
 
     public HomePageRozetka(WebDriver driver) {
         super(driver);
+
     }
 
     public HomePageRozetka goMainPage() {

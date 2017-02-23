@@ -1,6 +1,7 @@
 package driverHolder;
 
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.support.PageFactory;
 
 
 /**
@@ -12,5 +13,6 @@ public class DriverHolder {
 
     public DriverHolder(WebDriver driver){
         this.driver = driver;
+        PageFactory.initElements(driver, this);
     }
 }

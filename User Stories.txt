@@ -2,3 +2,5 @@
 2.As purchaser, I want to find the phone of the brand LG so that select them according to my specifications.
 3.As purchaser, I want to register so that to become a client of this site.
 4.As user, I want to get leave a comment on the item so that site users can see him.
+5. перейти HomePage > бытовая техникаю > холодильники> однокамерные > два первых товара добавить в сравнения > открыть сравнение> вывести товар где цена ниже.
+6. каталог товаров> товары для бизнеса> Офсиная техника> проекторы> сортировать товар по новинкам > первый товар на стр в топ продаже> и проверить что цена ниже 20000
